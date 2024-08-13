@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  min-height: 65vh;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.card__items .card {
+  box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.5);
+  height: 450px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.card__items .card .card__img {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  height: 40%;
+  transition: all 0.3s ease;
+}
+
+.card__items .card .card__img:hover {
+  transform: scale(1.1);
+}
+
+.card__items .card:nth-child(1) .card__img {
+  background-image: url("./900-0-b5136807e148155eb633cf54b5103194.jpg");
+}
+.card__items .card:nth-child(2) .card__img {
+  background-image: url("./images.jpg");
+}
+.card__items .card:nth-child(3) .card__img {
+  background-image: url("./post_5caa00907fcf3-750x500-680x453-680x453.jpeg");
+}
+.card__items .card .card__img .card__price {
+  background-color: #b3a4a4dc;
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.card__items .card .about__card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60%;
+  padding: 15px;
+}
+
+.card__items .card .about__card p {
+  font-size: 12px;
+}
+
+.card__items .card .about__card h3,
+.card__items .card .about__card p:nth-child(2) {
+  margin: 10px 0;
+}
+
+.card__items .card .about__card .footer__card {
+  display: flex;
+  justify-content: space-between;
+}
